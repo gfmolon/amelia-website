@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espumantes Nona Amélia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Espumantes Nona Amélia</h1>
+        <p>Sabor da Serra Gaúcha direto para sua casa</p>
+    </header>
+
+    <main class="produtos">
+        <div class="produto">
+            <img src="espumante1.jpg" alt="Espumante Brut">
+            <h2>Brut Tradicional</h2>
+            <p class="descricao" data-tooltip="Ideal para harmonizar com pratos leves. Notas de maçã verde e um final seco e persistente.">
+                Fresco, seco e elegante, ideal para celebrações.
+            </p>
+            <button class="mais-btn" onclick="mostrarDescricao(this)">Mais...</button>
+            <p class="descricao-adicional">Ideal para harmonizar com pratos leves. Notas de maçã verde e um final seco e persistente.</p>
+            <p class="preco">R$ 59,90</p>
+            <a href="https://wa.me/5554992434004?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20espumante%20Brut%20Tradicional." target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="produto">
+            <img src="espumante2.jpg" alt="Espumante Rosé">
+            <h2>Rosé da Serra</h2>
+            <p class="descricao" data-tooltip="Feito com uvas selecionadas. Aromas de morango e flores do campo.">
+                Notas florais e frutadas, leve e refrescante.
+            </p>
+            <button class="mais-btn" onclick="mostrarDescricao(this)">Mais...</button>
+            <p class="descricao-adicional">Feito com uvas selecionadas. Aromas de morango e flores do campo.</p>
+            <p class="preco">R$ 64,90</p>
+            <a href="https://wa.me/5554992434004?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20espumante%20Ros%C3%A9%20da%20Serra." target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+
+        <div class="produto">
+            <img src="espumante3.jpg" alt="Espumante Moscatel">
+            <h2>Moscatel Doce</h2>
+            <p class="descricao" data-tooltip="Espumante doce e aromático com notas de mel e pêssego. Perfeito para sobremesas.">
+                Delicado e aromático, perfeito com sobremesas.
+            </p>
+            <button class="mais-btn" onclick="mostrarDescricao(this)">Mais...</button>
+            <p class="descricao-adicional">Espumante doce e aromático com notas de mel e pêssego. Perfeito para sobremesas.</p>
+            <p class="preco">R$ 54,90</p>
+            <a href="https://wa.me/5554992434004?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20espumante%20Moscatel%20Doce." target="_blank">
+                <button>Comprar</button>
+            </a>
+        </div>
+    </main>
+
+    <!-- Botão flutuante WhatsApp -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/5554992434004" target="_blank">📱 Fale no WhatsApp</a>
+    </div>
+
+    <footer>
+        <div class="instagram-destaque">
+            <p>Siga a gente no Instagram!</p>
+            <a href="https://instagram.com/nona_amelia_" target="_blank">@nona_amelia_</a>
+        </div>
+        <p>&copy; 2025 São Marcos, Rio Grande do Sul - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JS para exibir descrição no mobile -->
+    <script>
+    function mostrarDescricao(botao) {
+        const descricao = botao.nextElementSibling;
+        descricao.classList.toggle('visivel');
+    }
+    </script>
+</body>
+</html>
+
+

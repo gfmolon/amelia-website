@@ -1,0 +1,197 @@
+
+/* === Fonte com serifa robusta e colonial === */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
+
+body {
+    font-family: 'Domine', serif;
+    background-color: #f9f4ef; /* tom papel antigo */
+    color: #3b2f2f; /* marrom antigo */
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* === Cabeçalho === */
+header {
+    background-color: #ede4d1;
+    color: #4b3621;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #d6c1a3;
+    font-size: 1.1rem;
+}
+
+/* === Grade de produtos === */
+main.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* === Produto individual === */
+.produto {
+    position: relative;
+    background-color: #fff8ee;
+    border: 1px solid #d6c1a3;
+    border-radius: 4px;
+    width: 280px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.produto img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border: 1px solid #c7b299;
+    border-radius: 3px;
+}
+
+.produto h2 {
+    font-size: 1.4rem;
+    margin: 1rem 0 0.5rem;
+    color: #5c4438;
+}
+
+.produto p {
+    font-size: 1rem;
+    margin: 0.4rem 0;
+    color: #3b2f2f;
+}
+
+.produto .preco {
+    color: #6c4f3d;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0.7rem 0;
+}
+
+/* === Botões === */
+button {
+    background-color: #a98467;
+    color: #fffef9;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #7e5d47;
+}
+
+/* === Botão flutuante WhatsApp === */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a98467;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.whatsapp-button a {
+    color: #fffef9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.whatsapp-button:hover {
+    background-color: #7e5d47;
+}
+
+/* === Rodapé e Instagram === */
+footer {
+    background-color: #ede4d1;
+    color: #5c4438;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #a0522d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.instagram-destaque {
+    background-color: #fff5e6;
+    border: 1px solid #d8c4aa;
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* === Tooltip Desktop === */
+@media (min-width: 769px) {
+    .descricao[data-tooltip]:hover::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        background-color: #fefaf4;
+        color: #3b2f2f;
+        padding: 0.6rem;
+        border: 1px solid #c7b299;
+        border-radius: 4px;
+        font-size: 0.95rem;
+        width: 250px;
+        top: 100%;
+        left: 0;
+        transform: translateY(5px);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        z-index: 999;
+    }
+
+    .mais-btn,
+    .descricao-adicional {
+        display: none !important;
+    }
+}
+
+/* === Versão Mobile === */
+@media (max-width: 768px) {
+    .descricao[data-tooltip]:hover::after {
+        display: none;
+    }
+
+    .mais-btn {
+        display: inline-block;
+        background-color: transparent;
+        color: #6c4f3d;
+        border: none;
+        font-size: 0.95rem;
+        cursor: pointer;
+        padding: 0;
+        margin-top: 0.5rem;
+        font-weight: bold;
+        font-family: 'Domine', serif;
+    }
+
+    .descricao-adicional {
+        display: none;
+        margin-top: 0.5rem;
+        font-size: 0.95rem;
+        color: #3b2f2f;
+        font-family: 'Domine', serif;
+    }
+
+    .descricao-adicional.visivel {
+        display: block;
+    }
+}
+
+
