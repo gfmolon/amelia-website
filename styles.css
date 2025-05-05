@@ -20,6 +20,12 @@ header {
     font-size: 1.1rem;
 }
 
+header h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
 /* === Grade de produtos === */
 main.produtos {
     display: flex;
@@ -168,6 +174,14 @@ footer a:hover {
 
 /* === Versão Mobile === */
 @media (max-width: 768px) {
+    header {
+        padding: 1rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
     .descricao[data-tooltip]:hover::after {
         display: none;
     }
@@ -198,6 +212,7 @@ footer a:hover {
     }
 }
 
+/* === Imagem Ampliada === */
 .imagem-ampliada {
     position: fixed;
     top: 0;
