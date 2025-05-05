@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,22 +6,17 @@
     
     <title>Espumantes Nona Amélia | Sabor da Serra Gaúcha</title>
     
-    <!-- SEO -->
     <meta name="description" content="Conheça os espumantes Moscatel Branco e Rosé da Nona Amélia. Direto da Serra Gaúcha, perfeitos para acompanhar sobremesas e momentos especiais.">
     <meta name="keywords" content="espumante moscatel, moscatel branco, moscatel rosé, espumante doce, vinhos da serra gaúcha, Nona Amélia, espumante artesanal, pietro felice, sao marcos, comprar espumante online">
     <meta name="author" content="Empório Nona Amélia">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Espumantes Nona Amélia | Direto da Serra Gaúcha">
     <meta property="og:description" content="Moscatel Branco e Rosé da Nona Amélia. Refrescantes, aromáticos e perfeitos com sobremesas.">
     <meta property="og:image" content="https://www.emporiodiamelia.com.br/imagens/espumante3.jpg">
     <meta property="og:url" content="https://www.emporiodiamelia.com.br">
     <meta property="og:type" content="website">
 
-    <!-- Canonical -->
     <link rel="canonical" href="https://www.emporiodiamelia.com.br">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,7 +27,7 @@
 
     <main class="produtos">
         <section class="produto">
-            <img src="espumante3.jpg" alt="Espumante Moscatel Branco">
+            <img class="produto-img" src="https://i.ibb.co/LD26vPcY/moscatel-branco.jpg" onclick="ampliarImagem(this)" alt="Espumante Moscatel Branco">
             <h2>Moscatel Branco</h2>
             <p class="descricao" data-tooltip="Refrescante e aromático, vai bem com frutas e sobremesas.">
                 Refrescante e aromático, vai bem com frutas e sobremesas.
@@ -47,7 +41,7 @@
         </section>
 
         <section class="produto">
-            <img src="espumante3.jpg" alt="Espumante Moscatel Rosé">
+            <img class="produto-img" src="https://i.ibb.co/q3YRB2qG/moscatel-rose.jpg" onclick="ampliarImagem(this)" alt="Espumante Moscatel Rosé">
             <h2>Moscatel Rosé</h2>
             <p class="descricao" data-tooltip="Leve e frutado, ótimo para acompanhar doces ou servir bem gelado.">
                 Leve e frutado, ótimo para acompanhar doces ou servir bem gelado.
@@ -63,7 +57,6 @@
         </section>
     </main>
 
-    <!-- Botão flutuante WhatsApp -->
     <div class="whatsapp-button">
         <a href="https://wa.me/5554992434004" target="_blank" aria-label="Fale com a Nona Amélia no WhatsApp">📱 Fale no WhatsApp</a>
     </div>
@@ -78,10 +71,24 @@
 
     <script>
     function mostrarDescricao(botao) {
-        const descricaoAdicional = botao.nextElementSibling;
-        descricaoAdicional.classList.toggle('visivel');
-        botao.textContent = descricaoAdicional.classList.contains('visivel') ? 'Menos...' : 'Mais...';
-    }
+    const descricaoAdicional = botao.nextElementSibling;
+    descricaoAdicional.classList.toggle('visivel');
+    botao.textContent = descricaoAdicional.classList.contains('visivel') ? 'Menos...' : 'Mais...';
+}
+
+function ampliarImagem(imagem) {
+    const overlay = document.createElement('div');
+    overlay.classList.add('imagem-ampliada');
+
+    const imgAmpliada = document.createElement('img');
+    imgAmpliada.src = imagem.src;
+    imgAmpliada.alt = imagem.alt;
+
+    overlay.appendChild(imgAmpliada);
+    document.body.appendChild(overlay);
+
+    overlay.onclick = () => overlay.remove();
+}
     </script>
 </body>
 </html>
