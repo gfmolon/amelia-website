@@ -24,11 +24,10 @@ header h1 {
     line-height: 1.2;
 }
 
-
 .logo-container {
     width: 100%;
     max-width: 500px; /* Tamanho ajustado para desktop */
-    height: 140px;
+    height: 150px;
     overflow: hidden;
     display: flex;
     justify-content: center;
