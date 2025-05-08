@@ -24,6 +24,33 @@ header h1 {
     line-height: 1.2;
 }
 
+
+.logo-container {
+    width: 100%;
+    max-width: 500px; /* Tamanho ajustado para desktop */
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center -5px; /* Foco vertical ajustado */
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .logo-container {
+        max-width: 300px;
+        height: 100px;
+    }
+}
+
 main.produtos {
     display: flex;
     flex-wrap: wrap;
