@@ -271,3 +271,7 @@ footer a:hover {
     border: 4px solid white;
     border-radius: 8px;
 }
+
+.stripe-support h2 {
+    color: #000000;
+}
