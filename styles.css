@@ -43,6 +43,11 @@ main.produtos {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
+.stripe-support {
+    border: 1px solid #d6c1a3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
 .produto-img {
     width: auto;
     max-width: 100%;
