@@ -28,7 +28,7 @@ header h1 {
 .logo-container {
     width: 100%;
     max-width: 500px; /* Tamanho ajustado para desktop */
-    height: 120px;
+    height: 140px;
     overflow: hidden;
     display: flex;
     justify-content: center;
