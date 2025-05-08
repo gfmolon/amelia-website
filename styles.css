@@ -45,8 +45,8 @@ header h1 {
 /* Responsividade para mobile */
 @media (max-width: 768px) {
     .logo-container {
-        max-width: 300px;
-        height: 100px;
+        max-width: 220px;
+        height: 75px;
     }
 }
 
