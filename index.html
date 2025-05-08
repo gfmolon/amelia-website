@@ -91,6 +91,7 @@ function ampliarImagem(imagem) {
     const imgAmpliada = document.createElement('img');
     imgAmpliada.src = imagem.src;
     imgAmpliada.alt = imagem.alt;
+    imgAmpliada.classList.add('borda-branca');
 
     overlay.appendChild(imgAmpliada);
     document.body.appendChild(overlay);
