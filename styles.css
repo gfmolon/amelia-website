@@ -23,6 +23,10 @@ header h1 {
     line-height: 1.2;
 }
 
+header p {
+    line-height: 1.2;
+}
+
 .logo-container {
     width: 100%;
     max-width: 350px; /* Tamanho ajustado para desktop */
