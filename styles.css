@@ -121,6 +121,20 @@ button:hover {
     background-color: #7e5d47;
 }
 
+.contato-info {
+    text-align: center; 
+    margin: 15px;
+    padding-bottom:15px;
+}
+
+.contato-info p {
+    line-height: 1.2;
+}
+
+.contato-info p a {
+    color: #a98467;
+}
+
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
