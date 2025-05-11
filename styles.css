@@ -126,7 +126,6 @@ button:hover {
     text-align: center; 
     margin: 5px;
     padding-bottom:5px;
-    margin-top:-10px;
 }
 
 .contato-info p {
@@ -213,7 +212,6 @@ footer a:hover {
 @media (max-width: 768px) {
     header {
         padding: 1rem 1rem;
-        max-height:100px;
     }
 
     header h1 {
