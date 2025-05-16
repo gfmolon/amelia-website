@@ -327,3 +327,32 @@ footer a:hover {
         width: 90%;
     }
 }
+
+
+.destaque-premiacao {
+    background-color: #2C3E50; /* Azul escuro elegante */
+    color: #FFFFFF;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-left: 5px solid #2980B9;
+    border-right: 5px solid #E74C3C;
+    font-family: 'Arial', sans-serif;
+}
+
+.destaque-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.destaque-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.destaque-container p {
+    font-size: 1.2em;
+    margin: 0;
+    font-style: italic;
+}
